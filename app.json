@@ -16,8 +16,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/TechnoMindz/Extra_Feature_Bot",
-    "repository": "https://github.com/TechnoMindz/Extra_Feature_Bot",
+    "website": "https://github.com/DeepSandhra/Extra_Feature_Bot",
+    "repository": "https://github.com/DeepSandhra/Extra_Feature_Bot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
