@@ -219,12 +219,12 @@ async def next_page(bot, query):
             )
     btn.insert(0,
             [
-                InlineKeyboardButton('♥Mʏ ɢʀᴏᴜᴘ♥', url='https://t.me/Movies_hunt_2022"),
-                InlineKeyboardButton('ᴍᴏᴠɪᴇꜱ ᴄʜᴀɴɴᴇʟ 📥', url='https://t.me/Movies_DATABASE_2022")
+                InlineKeyboardButton("𓂀𝕄𝕆𝕍𝕀𝔼𝕊𓂀", url="https://t.me/technomoviesCollection"),
+                InlineKeyboardButton("彡[ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ]彡", url="https://t.me/TMmainchannel")
             ])
 
     btn.insert(0, [
-        InlineKeyboardButton("Hᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ💽", url="https://t.me/Howto_watch/4")
+        InlineKeyboardButton("🤖𓂀ℍ𝕆𝕎 𝕋𝕆 𝔻𝕆𝕎ℕ𝕃𝕆𝔸𝔻𓂀🤖", url="https://t.me/tmmainchannel/4")
     ])
     try:
         await query.edit_message_reply_markup(
