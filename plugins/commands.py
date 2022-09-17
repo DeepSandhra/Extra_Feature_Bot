@@ -65,8 +65,8 @@ async def start(client, message):
         await asyncio.sleep(2)
         await m.delete()
         await message.reply_chat_action("typing")
-        await message.reply_video(
-            video=random.choice(PICS),
+        await message.reply_sticker(
+            sticker=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
@@ -115,8 +115,8 @@ async def start(client, message):
             InlineKeyboardButton('✅ 𝚂𝚞𝚋𝚜𝚌𝚛𝚒𝚋𝚎  ✅', url='https://youtube.com/channel/UC36Y9w_AM4H_ZWipKUg93QQ')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_video(
-            video=random.choice(PICS),
+        await message.reply_sticker(
+            sticker=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
@@ -397,7 +397,7 @@ async def delete_all_index_confirm(bot, message):
 @Client.on_message(filters.private & filters.text & ~filters.regex("^/"))
 async def msg_handler(c, m):
     await m.reply_text(
-        "𝐇𝐞𝐥𝐥𝐨 𝐮𝐬𝐞𝐫𝐬 👋 \𝐧𝐘𝐨𝐮 𝐚𝐫𝐞 𝐧𝐨𝐭 𝐚𝐥𝐥𝐨𝐰𝐞𝐝 𝐭𝐨 𝐮𝐬𝐞 𝐦𝐞 𝐈𝐧 𝐏𝐌 𝐓𝐨 𝐚𝐯𝐨𝐢𝐝 𝐮𝐧𝐰𝐚𝐧𝐭𝐞𝐝 𝐟𝐥𝐨𝐨𝐝𝐬 𝐚𝐧𝐝 𝐜𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 𝐢𝐬𝐬𝐮𝐞\n𝐇𝐨𝐰𝐞𝐯𝐞𝐫 𝐘𝐨𝐮 𝐜𝐚𝐧 𝐆𝐞𝐭 𝐲𝐨𝐮𝐫 𝐫𝐞𝐪𝐮𝐢𝐫𝐞𝐝 𝐦𝐨𝐯𝐢𝐞𝐬 𝐡𝐞𝐫𝐞 👉@TechnoMoviesCollection\n𝐈𝐟 𝐲𝐨𝐮 𝐧𝐞𝐞𝐝 𝐭𝐨 𝐜𝐡𝐢𝐭 𝐜𝐡𝐚𝐭 𝐨𝐫 𝐫𝐞𝐩𝐨𝐫𝐭 𝐚𝐧𝐲 𝐛𝐮𝐠𝐬 𝐲𝐨𝐮 𝐚𝐫𝐞 𝐟𝐫𝐞𝐞 𝐭𝐨 𝐜𝐡𝐚𝐭 𝐡𝐞𝐫𝐞 👉@TechnoMindzChat\n\n𝐓𝐡𝐚𝐧𝐤𝐬 𝐅𝐨𝐫 𝐘𝐨𝐮𝐫 𝐂𝐨𝐨𝐩𝐞𝐫𝐚𝐭𝐢𝐨𝐧✨\n\n♥️ 𝗧𝗲𝗮𝗺 ➜ @TmMainChannel"
+        "𝐇𝐞𝐥𝐥𝐨 𝐮𝐬𝐞𝐫𝐬 👋 \𝐧𝐘𝐨𝐮 𝐚𝐫𝐞 𝐧𝐨𝐭 𝐚𝐥𝐥𝐨𝐰𝐞𝐝 𝐭𝐨 𝐮𝐬𝐞 𝐦𝐞 𝐈𝐧 𝐏𝐌 𝐓𝐨 𝐚𝐯𝐨𝐢𝐝 𝐮𝐧𝐰𝐚𝐧𝐭𝐞𝐝 𝐟𝐥𝐨𝐨𝐝𝐬 𝐚𝐧𝐝 𝐜𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 𝐢𝐬𝐬𝐮𝐞\n𝐇𝐨𝐰𝐞𝐯𝐞𝐫 𝐘𝐨𝐮 𝐜𝐚𝐧 𝐆𝐞𝐭 𝐲𝐨𝐮𝐫 𝐫𝐞𝐪𝐮𝐢𝐫𝐞𝐝 𝐦𝐨𝐯𝐢𝐞𝐬 𝐡𝐞𝐫𝐞 /n𝐈𝐟 𝐲𝐨𝐮 𝐧𝐞𝐞𝐝 𝐭𝐨 𝐜𝐡𝐢𝐭 𝐜𝐡𝐚𝐭 𝐨𝐫 𝐫𝐞𝐩𝐨𝐫𝐭 𝐚𝐧𝐲 𝐛𝐮𝐠𝐬 𝐲𝐨𝐮 𝐚𝐫𝐞 𝐟𝐫𝐞𝐞 𝐭𝐨 𝐜𝐡𝐚𝐭 𝐡𝐞𝐫𝐞 𝐓𝐡𝐚𝐧𝐤𝐬 𝐅𝐨𝐫 𝐘𝐨𝐮𝐫 𝐂𝐨𝐨𝐩𝐞𝐫𝐚𝐭𝐢𝐨𝐧✨\n\n♥️"
     )
 
 
