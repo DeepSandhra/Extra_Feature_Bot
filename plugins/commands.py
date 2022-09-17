@@ -65,8 +65,7 @@ async def start(client, message):
         await asyncio.sleep(2)
         await m.delete()
         await message.reply_chat_action("typing")
-        await message.reply_sticker(
-            sticker=random.choice(PICS),
+        m=await message.reply_sticker("CAACAgIAAxkBAAIHAWMlX6m8Mg3pIr132CwWjayiQ-AjAAKgFwAC37QgSSCArCK7IMbJHgQ")
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
