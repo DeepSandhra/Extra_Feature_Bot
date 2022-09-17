@@ -59,13 +59,9 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('✅ 𝚂𝚞𝚋𝚜𝚌𝚛𝚒𝚋𝚎  ✅', url='https://youtube.com/channel/UC36Y9w_AM4H_ZWipKUg93QQ')
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_chat_action("typing")
-        m=await message.reply_sticker("CAACAgIAAxkBAALdtWKbQQeiW14ql5zd86zLUzJO_HCVAAKHFQACPQ9QSd6bZv3Wx6O_HgQ") 
-        await asyncio.sleep(2)
-        await m.delete()
-        await message.reply_chat_action("typing")
-        m=await message.reply_sticker("CAACAgIAAxkBAAIHAWMlX6m8Mg3pIr132CwWjayiQ-AjAAKgFwAC37QgSSCArCK7IMbJHgQ")
+        reply_markup = InlineKeyboardMarkup(buttons)        
+        await message.reply_photo(
+            photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
@@ -114,8 +110,8 @@ async def start(client, message):
             InlineKeyboardButton('✅ 𝚂𝚞𝚋𝚜𝚌𝚛𝚒𝚋𝚎  ✅', url='https://youtube.com/channel/UC36Y9w_AM4H_ZWipKUg93QQ')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_sticker(
-            sticker=random.choice(PICS),
+        await message.reply_photo(
+            photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
